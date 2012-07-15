@@ -30,10 +30,10 @@
 ;; auto-complete-mode ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d")    ; This may not be appeared if you have already added.
+(add-to-list 'load-path "~/.emacs.d/plugins/autocomplete")    ; This may not be appeared if you have already added.
 (require 'auto-complete-config)
 (ac-config-default)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/autocomplete/ac-dict")
 
 
 ;;;;;;;;;;;;;;
@@ -44,6 +44,14 @@
               "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas/global-mode 1)
+
+;;;;;;;;;;;;;;
+;; zen-coding ;;
+;;;;;;;;;;;;;;
+
+(add-to-list 'load-path "~/.emacs.d/plugins/zencoding")
+(require 'zencoding-mode)
+
 
 ;;;;;;;;;;;;;;;;;
 ;; color-theme ;;
